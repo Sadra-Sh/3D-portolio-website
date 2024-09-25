@@ -8,17 +8,16 @@ const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   // Create a reference to the model
-  const computerRef = useRef();
+  //const computerRef = useRef();
 
-  // Rotate the model over time
-  useFrame((state, delta) => {
-    if (computerRef.current) {
-      computerRef.current.rotation.y += delta * 0.5; // Adjust rotation speed
-      //computerRef.current.rotation.z += delta * 0.1;
-      computerRef.current.rotation.x = Math.sin(state.clock.elapsedTime) * 1;
+  // useFrame((state, delta) => {
+  //   if (computerRef.current) {
+  //     computerRef.current.rotation.y += delta * 0.5; // Adjust rotation speed
+  //     //computerRef.current.rotation.z += delta * 0.1;
+  //     computerRef.current.rotation.x = Math.sin(state.clock.elapsedTime) * 1;
 
-    }
-  });
+  //   }
+  // });
 
   return (
     <mesh>
@@ -69,7 +68,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop="always"
+      frameloop="demand"
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
