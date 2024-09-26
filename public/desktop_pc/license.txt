@@ -1,8 +1,11 @@
 Model Information:
-* title:	Apollo 11 Command Module (Combined)
-* source:	https://sketchfab.com/3d-models/apollo-11-command-module-combined-372bb6781922471cada4e0a9bd5c61fb
-* author:	The Smithsonian Institution (https://sketchfab.com/Smithsonian)
+* title:	Space Shuttle 002
+* source:	https://sketchfab.com/3d-models/space-shuttle-002-fba0dcfc79e846d3a7b1e0e0bf7438b0
+* author:	Giimann (https://sketchfab.com/giimann)
 
 Model License:
-* license type:	CC0-1.0 (http://creativecommons.org/publicdomain/zero/1.0/)
-* requirements:	Credit is not mandatory. Commercial use is allowed.
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Space Shuttle 002" (https://sketchfab.com/3d-models/space-shuttle-002-fba0dcfc79e846d3a7b1e0e0bf7438b0) by Giimann (https://sketchfab.com/giimann) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

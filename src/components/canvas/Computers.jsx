@@ -1,5 +1,5 @@
-import React, { Suspense, useEffect, useState, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import React, { Suspense, useEffect, useState } from "react";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
@@ -7,21 +7,9 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  // Create a reference to the model
-  //const computerRef = useRef();
-
-  // useFrame((state, delta) => {
-  //   if (computerRef.current) {
-  //     computerRef.current.rotation.y += delta * 0.5; // Adjust rotation speed
-  //     //computerRef.current.rotation.z += delta * 0.1;
-  //     computerRef.current.rotation.x = Math.sin(state.clock.elapsedTime) * 1;
-
-  //   }
-  // });
-
   return (
     <mesh>
-      <hemisphereLight intensity={1} groundColor="black" />
+      <hemisphereLight intensity={1.5} groundColor='black' />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -30,13 +18,12 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={50} />
+      <pointLight intensity={1} />
       <primitive
-        ref={computerRef} // Attach ref to the model
         object={computer.scene}
-        scale={isMobile ? 0.5 : 1.5}
-        position={isMobile ? [-4, -5, -1.7] : [-4, -4, -1.7]}
-        rotation={[-0.0, 1.3, 0.2]} // Initial rotation
+        scale={isMobile ? 0.01 : 0.15}
+        position={isMobile ? [0, 0, 1] : [0, 0, 2]}
+        rotation={[0.3, 2.3, -0.1]}
       />
     </mesh>
   );
@@ -49,7 +36,7 @@ const ComputersCanvas = () => {
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
-    // Set the initial value of the isMobile state variable
+    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
     // Define a callback function to handle changes to the media query
@@ -68,7 +55,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop="demand"
+      frameloop='always'
       shadows
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}

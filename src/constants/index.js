@@ -87,24 +87,12 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Assembly",
-    icon: redux,
-  },
-  {
-    name: "Postman",
-    icon: nodejs,
-  },
-  {
     name: "Firebase Console",
     icon: tailwind,
   },
   {
     name: "Google Cloud Console",
     icon: googlecloud,
-  },
-  {
-    name: "Docker",
-    icon: docker,
   },
   {
     name: "Java",
