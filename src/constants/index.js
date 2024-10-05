@@ -75,36 +75,12 @@ const technologies = [
     icon: git,
   },
   {
-    name: "C++",
-    icon: typescript,
-  },
-  {
     name: "Python",
     icon: reactjs,
   },
   {
-    name: "Verilog",
-    icon: mongodb,
-  },
-  {
-    name: "Firebase Console",
-    icon: tailwind,
-  },
-  {
-    name: "Google Cloud Console",
-    icon: googlecloud,
-  },
-  {
     name: "Java",
     icon: threejs,
-  },
-  {
-    name: "HTML",
-    icon: html,
-  },
-  {
-    name: "CSS",
-    icon: css,
   },
   {
     name: "Javascript",
@@ -121,6 +97,14 @@ const technologies = [
   {
     name: "Perl",
     icon: perl,
+  },
+  {
+    name: "Firebase Console",
+    icon: tailwind,
+  },
+  {
+    name: "Google Cloud Console",
+    icon: googlecloud,
   },
 ];
 
